@@ -6,12 +6,15 @@ const Users = ({user}) => {
         <div>
             <div className="row">
         <div className="col s12 m7">
-          <div className="card">
+          <div className="card small">
             <div className="card-image">
-              <img src={image} alt="" />
-              <span className="card-title">{user.name}</span>
+              <img src={image} alt="" height="300" width="300" />
             </div>
             <div className="card-content">
+            <div>
+                    <h2>Name: </h2>
+                    <h4>{user.name}</h4>
+                </div>
                 <div>
                     <h2>Company: </h2>
                     <h4>{user.company.name}</h4>
